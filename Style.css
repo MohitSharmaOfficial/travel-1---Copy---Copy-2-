@@ -793,7 +793,7 @@ header {
     }
     #developer-phone-section {
         justify-self: flex-start;
-        margin: 1rem 1rem;
+        margin: 1rem 0rem;
     }
     #developer-phone-section a {
         display: block;
@@ -802,7 +802,7 @@ header {
     #developer-company-support-section {
         grid-template-columns: 1fr;
         gap: 1rem;
-        margin: 0rem 1rem;
+        margin: 0rem 0rem;
     }
     #developer-company-support-section div a {
         display: inline-block;
@@ -813,7 +813,7 @@ header {
     }
     #developer-newsletter-section {
         justify-self: flex-start;
-        margin: 1rem 1rem;
+        margin: 1rem 0rem;
     }
     #developer-newsletter-section h6 {
         margin-top: 0.5rem;
