@@ -675,7 +675,7 @@ header {
 #developer-phone-section span {
     color: var(--cl-white);
     font-size: 1.5rem;
-    margin-left: 0.5rem;
+    margin-left: 0.1rem;
     font-family: var(--ff-OpenSans);
 }
 
@@ -793,7 +793,7 @@ header {
     }
     #developer-phone-section {
         justify-self: flex-start;
-        margin: 1rem 0.3rem 0rem 0.3rem;
+        margin: 1rem 0rem 0rem 0.3rem;
     }
     #developer-phone-section a {
         display: block;
@@ -809,7 +809,7 @@ header {
     }
     #developer-company-support-section div a {
         display: inline-block;
-        margin-right: 0.3rem;
+        margin: 0.3rem 0.3rem 0rem 0rem;
     }
     #developer-newsletter-section {
         justify-self: flex-start;
