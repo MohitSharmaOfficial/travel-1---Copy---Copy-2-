@@ -21,6 +21,10 @@
     border: 0;
 }
 
+::-webkit-scrollbar {
+    opacity: 0;
+}
+
 :root {
     /* CLOLORS */
     --cl-white: #FFFFFF;
@@ -595,7 +599,7 @@ header {
 }
 
 #review-section section {
-    background: var(--cl-gerywhite);
+    background: var(--cl-orangewhite);
     width: 35rem;
     margin: 3rem auto;
 }
@@ -638,7 +642,7 @@ header {
     text-align: center;
 }
 
-@media Screen and (max-width: 900px) {
+@media Screen and (max-width: 700px) {
     #review-section h2 {
         font-size: 1.75rem;
     }
@@ -646,28 +650,31 @@ header {
         width: 10rem;
     }
     #review-section section {
-        width: 25rem;
+        width: 20rem;
         margin: 2.5rem auto;
     }
     #previous-review {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
     }
     #next-review {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
     }
     #review-section-img {
-        margin: 2rem auto 1.25rem auto;
-        width: 14rem;
-        height: 14rem;
-        border-radius: 7rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 5rem;
+    }
+    #review-section section h3 {
+        font-size: 1.25rem;
+    }
+    #review-section section h4 {
+        font-size: 0.85rem;
     }
     #review-section-disc {
-        margin: 1rem 3rem 2rem 3rem;
+        margin: 1rem 2rem 2rem 2rem;
         font-size: 0.95rem;
-        font-family: var(--ff-OpenSans);
-        text-align: center;
     }
 }
 
@@ -823,7 +830,7 @@ header {
     }
     #developer-phone-section {
         justify-self: flex-start;
-        margin: 1rem 0rem 0rem 0.3rem;
+        margin: 1.5rem 0rem 0rem 0.3rem;
     }
     #developer-phone-section a {
         display: block;
