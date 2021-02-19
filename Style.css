@@ -73,7 +73,7 @@ h2 {
 hr {
     margin: auto;
     margin-top: 0.6rem;
-    width: 13rem;
+    width: 12rem;
     height: 0.15rem;
     background: var(--cl-black);
     border: 0px;
@@ -503,19 +503,25 @@ header {
     font-weight: 500;
 }
 
+@media Screen and (max-width: 1100px) {}
+
+@media Screen and (max-width: 700px) {}
+
 /* FEATUREDTOURS */
 
 /* +++++++ */
+
+/* +++++++++++++++++ */
+
+/* TOPDESTINATIONS */
 
 #top-destinations {
     width: 100vw;
     background: var(--cl-gerywhite);
 }
 
-#destination-grid {
+#top-destinations section {
     width: 95vw;
-    /* height: 200vh; */
-    padding-bottom: 2rem;
     margin: 3rem auto;
     background: var(--cl-gerywhite);
     display: grid;
@@ -525,70 +531,359 @@ header {
     grid-template-areas: 'a b b c' 'a b b c' 'a b b c' 'a b b c' 'a e f c' 'a e f g' 'd e f g' 'd e f g' 'd h f g' 'd h f g' 'd h i j' 'd h i j' 'k h i j' 'k h i j' 'k h i m' 'k l l m' 'k l l m' 'k l l m';
 }
 
-.destination-grid-img-1 {
+.destination-grid-img {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.destination-grid-img span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.destination-grid-img div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+    opacity: 0;
+}
+
+.destination-grid-img h1 {
+    font-size: 2rem;
+    font-family: var(--ff-OpenSans);
+    color: var(--cl-white);
+}
+
+.destination-grid-img p {
+    font-size: 1.5rem;
+    font-family: var(--ff-Roboto);
+    color: var(--cl-white);
+}
+
+#destination-grid-img-1 {
     grid-area: a;
-    background-color: var(--cl-orangewhite);
+    overflow: hidden;
+    background-color: var(--cl-black);
 }
 
-.destination-grid-img-2 {
+#destination-grid-img-2 {
     grid-area: b;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-3 {
+#destination-grid-img-3 {
     grid-area: c;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
+    border-radius: 0rem 7rem 0rem 0rem;
 }
 
-.destination-grid-img-4 {
+#destination-grid-img-4 {
     grid-area: d;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-5 {
+#destination-grid-img-5 {
     grid-area: e;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-6 {
+#destination-grid-img-6 {
     grid-area: f;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-7 {
+#destination-grid-img-7 {
     grid-area: g;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-8 {
+#destination-grid-img-8 {
     grid-area: h;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-9 {
+#destination-grid-img-9 {
     grid-area: i;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-10 {
+#destination-grid-img-10 {
     grid-area: j;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-11 {
+#destination-grid-img-11 {
     grid-area: k;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
+    border-radius: 0rem 0rem 0rem 7rem;
 }
 
-.destination-grid-img-12 {
+#destination-grid-img-12 {
     grid-area: l;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
 
-.destination-grid-img-13 {
+#destination-grid-img-13 {
     grid-area: m;
-    background: var(--cl-lightblack);
+    background: var(--cl-black);
 }
+
+#destination-grid-img-1 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#destination-grid-img-2 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-3 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#destination-grid-img-4 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-5 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-6 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-7 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-8 span {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+#destination-grid-img-9 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#destination-grid-img-10 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-11 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#destination-grid-img-12 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+#destination-grid-img-13 span {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#destination-grid-img-1 div {
+    transform: translate(-100%, -100%);
+}
+
+#destination-grid-img-1:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-2 div {
+    transform: translate(0%, -100%);
+}
+
+#destination-grid-img-2:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-3 div {
+    transform: translate(100%, -100%);
+}
+
+#destination-grid-img-3:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-4 div {
+    transform: translate(-100%);
+}
+
+#destination-grid-img-4:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-5:hover div {
+    opacity: 1;
+}
+
+#destination-grid-img-6:hover div {
+    opacity: 1;
+}
+
+#destination-grid-img-7 div {
+    transform: translate(100%);
+}
+
+#destination-grid-img-7:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-8:hover div {
+    opacity: 1;
+}
+
+#destination-grid-img-9:hover div {
+    opacity: 1;
+}
+
+#destination-grid-img-10 div {
+    transform: translate(100%);
+}
+
+#destination-grid-img-10:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-11 div {
+    transform: translate(-100%, 100%);
+}
+
+#destination-grid-img-11:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-12 div {
+    transform: translate(0%, 100%);
+}
+
+#destination-grid-img-12:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+#destination-grid-img-13 div {
+    transform: translate(100%, 100%);
+}
+
+#destination-grid-img-13:hover div {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.destination-grid-img:hover {
+    cursor: pointer;
+}
+
+.destination-grid-img:hover img {
+    opacity: 0.5;
+    transition: all 0.5s linear;
+}
+
+.destination-grid-img:hover div {
+    transition: all 0.8s linear;
+    transition-delay: 0.5s;
+}
+
+@media Screen and (max-width: 1400px) {
+    .destination-grid-img h1 {
+        font-size: 1.25rem;
+    }
+    .destination-grid-img p {
+        font-size: 1rem;
+    }
+}
+
+@media Screen and (max-width: 1100px) {
+    #top-destinations h2 {
+        font-size: 1.75rem;
+    }
+    #top-destinations hr {
+        width: 10rem;
+    }
+    .destination-grid-img h1 {
+        font-size: 1rem;
+    }
+    .destination-grid-img p {
+        font-size: 0.75rem;
+    }
+    #top-destinations section {
+        margin: 2.75rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(18, 0.13fr);
+        gap: 0.5rem;
+        grid-template-areas: 'a c h' 'a c h' 'a c h' 'a c h' 'a c h' 'a g h' 'd g h' 'd g f' 'd g f' 'd g f' 'd j f' 'd j f' 'k j f' 'k j i' 'k m i' 'k m i' 'k m i' 'k m i';
+    }
+    #destination-grid-img-2 {
+        display: none;
+    }
+    #destination-grid-img-5 {
+        display: none;
+    }
+    #destination-grid-img-12 {
+        display: none;
+    }
+}
+
+@media Screen and (max-width: 700px) {
+    #top-destinations h2 {
+        font-size: 1.5rem;
+    }
+    #top-destinations hr {
+        width: 8rem;
+    }
+    .destination-grid-img h1 {
+        font-size: 0.75rem;
+    }
+    .destination-grid-img p {
+        font-size: 0.5rem;
+    }
+    #top-destinations section {
+        margin: 2.5rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(18, 0.13fr);
+        gap: 0.5rem;
+        grid-template-areas: 'a c' 'a c' 'a c' 'a c' 'a c' 'a g' 'd g' 'd g f' 'd g' 'd g' 'd j' 'd j' 'k j' 'k j' 'k m' 'k m' 'k m' 'k m';
+    }
+    #destination-grid-img-2 {
+        display: none;
+    }
+    #destination-grid-img-5 {
+        display: none;
+    }
+    #destination-grid-img-12 {
+        display: none;
+    }
+    #destination-grid-img-6 {
+        display: none;
+    }
+    #destination-grid-img-8 {
+        display: none;
+    }
+    #destination-grid-img-9 {
+        display: none;
+    }
+}
+
+/* TOPDESTINATIONS */
+
+/* +++++++++++++ */
 
 /* +++++++++++++++ */
 
@@ -599,8 +894,8 @@ header {
 }
 
 #review-section section {
-    background: var(--cl-orangewhite);
-    width: 35rem;
+    background: var(--cl-gerywhite);
+    width: 33rem;
     margin: 3rem auto;
 }
 
@@ -642,12 +937,50 @@ header {
     text-align: center;
 }
 
-@media Screen and (max-width: 700px) {
+@media Screen and (max-width: 1100px) {
     #review-section h2 {
         font-size: 1.75rem;
+        margin-top: 1.75rem;
     }
     #review-section hr {
         width: 10rem;
+    }
+    #review-section section {
+        width: 26.5rem;
+        margin: 2.75rem auto;
+    }
+    #previous-review {
+        width: 5rem;
+        height: 5rem;
+    }
+    #next-review {
+        width: 5rem;
+        height: 5rem;
+    }
+    #review-section-img {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 6.5rem;
+    }
+    #review-section section h3 {
+        font-size: 1.35rem;
+    }
+    #review-section section h4 {
+        font-size: 0.95rem;
+    }
+    #review-section-disc {
+        margin: 1rem 2rem 2rem 2rem;
+        font-size: 1.05rem;
+    }
+}
+
+@media Screen and (max-width: 700px) {
+    #review-section h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    #review-section hr {
+        width: 8rem;
     }
     #review-section section {
         width: 20rem;
@@ -830,39 +1163,103 @@ header {
     }
     #developer-phone-section {
         justify-self: flex-start;
-        margin: 1.5rem 0rem 0rem 0.3rem;
+        margin: 1.75rem 0rem 0rem 1rem;
     }
     #developer-phone-section a {
         display: block;
         margin-top: 0.5rem;
     }
+    #developer-phone-section img {
+        width: 2rem;
+        height: 2rem;
+    }
+    #developer-phone-section span {
+        font-size: 1.5rem;
+    }
+    #developer-phone-section a {
+        font-size: 1.3rem;
+    }
     #developer-company-support-section {
         grid-template-columns: 1fr;
         gap: 0rem;
-        margin: 0rem 0.3rem;
+        margin: 0rem 1rem;
     }
-    #developer-company-support-section h5 {
-        margin-top: 1rem;
+    #developer-company-support-section div h5 {
+        font-size: 1.5rem;
+        margin-top: 1.25rem;
+    }
+    #developer-company-support-section div h6 {
+        font-size: 1.2rem;
     }
     #developer-company-support-section div a {
         display: inline-block;
-        margin: 0.3rem 0.3rem 0rem 0rem;
+        margin: 0.3rem 0.5rem 0rem 0rem;
     }
     #developer-newsletter-section {
         justify-self: flex-start;
-        margin: 1rem 0.3rem;
+        margin: 1.25rem 1rem;
+    }
+    #developer-newsletter-section h5 {
+        font-size: 1.5rem;
     }
     #developer-newsletter-section h6 {
-        margin-top: 0.5rem;
+        font-size: 1.2rem;
         width: 30rem;
     }
-    #developer-newsletter-section div {
-        display: flex;
-        margin-top: 1rem;
+    #developer-newsletter-section p {
+        font-size: 1.2rem;
     }
     #developer-newsletter-section input {
         height: 1.5rem;
         border: 0px;
+        width: 23rem;
+    }
+}
+
+@media Screen and (max-width: 700px) {
+    #developer-phone-section {
+        margin: 1.5rem 0rem 0rem 0.3rem;
+    }
+    #developer-phone-section img {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+    #developer-phone-section span {
+        font-size: 1.25rem;
+    }
+    #developer-phone-section a {
+        font-size: 1.05rem;
+    }
+    #developer-company-support-section {
+        margin: 0rem 0.3rem;
+    }
+    #developer-company-support-section div h5 {
+        font-size: 1.25rem;
+    }
+    #developer-company-support-section div h6 {
+        font-size: 0.95rem;
+        margin-top: 0.2rem;
+    }
+    #developer-company-support-section div a {
+        margin: 0.3rem 0.3rem 0rem 0rem;
+    }
+    #developer-newsletter-section {
+        margin: 1rem 0.3rem;
+    }
+    #developer-newsletter-section h5 {
+        font-size: 1.25rem;
+    }
+    #developer-newsletter-section h6 {
+        font-size: 0.95rem;
+    }
+    #developer-newsletter-section div {
+        margin-top: 0.5rem;
+    }
+    #developer-newsletter-section p {
+        font-size: 0.95rem;
+    }
+    #developer-newsletter-section input {
+        height: 1.5rem;
         width: 16rem;
     }
 }
@@ -909,7 +1306,34 @@ header {
     font-size: 1rem;
 }
 
+@media Screen and (max-width: 1100px) {
+    #copyright-section img {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+    #copyright-section section p {
+        font-size: 0.75rem;
+    }
+    #copyright-section>p {
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
 @media Screen and (max-width: 900px) {
+    #copyright-section img {
+        width: 1rem;
+        height: 1rem;
+    }
+    #copyright-section section p {
+        font-size: 1rem;
+    }
+    #copyright-section>p {
+        font-size: 1rem;
+    }
+}
+
+@media Screen and (max-width: 700px) {
     #copyright-section img {
         width: 0.75rem;
         height: 0.75rem;
